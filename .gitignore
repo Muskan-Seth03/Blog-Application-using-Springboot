@@ -31,3 +31,17 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Ignore application property files and local environment files
+# Ignore any application.properties (root or under src/main/resources) and profile-specific variants
+**/application.properties
+**/application-*.properties
+
+# Local environment and logs
+.env
+*.local
+*.log
+
+# Keep IDE/editor backups
+*.swp
+*~
